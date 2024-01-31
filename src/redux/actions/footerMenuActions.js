@@ -251,12 +251,9 @@ export const saveFooterMenuError = (error) => {
 export const updateFooterMenu = (footermenu, id) => {
   return function (dispatch) {
     dispatch(updateFooterMenuStart());
-    const data = {
-      name: footermenu.name,
-    };
 
     axios
-      .put(`footermenu/${id}`, data)
+      .put(`footermenu/${id}`, footermenu)
       .then((response) => {
         const resultFooterMenu = response.data.data;
         dispatch(updateFooterMenuSuccess(resultFooterMenu));
