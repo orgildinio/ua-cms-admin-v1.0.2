@@ -6,7 +6,7 @@ import { requiredCheck, minLength, maxLength } from "../../lib/inputRegex";
 import { toastControl } from "../../lib/toasControl";
 
 // ACTIONS
-import { updateMenu } from "../../redux/actions/FooterMenuActions";
+import { updateFooterMenu } from "../../redux/actions/FooterMenuActions";
 
 const Change = (props) => {
   const [cookies, setCookie, removeCookie] = useCookies(["language"]);
@@ -193,7 +193,7 @@ const mapStateToProps = (state) => {
 };
 const mapDispatchToProps = (dispatch) => {
   return {
-    update: (data, id) => dispatch(updateMenu(data, id)),
+    update: (data, id) => dispatch(updateFooterMenu(data, id)),
   };
 };
 
