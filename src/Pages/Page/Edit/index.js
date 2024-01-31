@@ -330,7 +330,7 @@ const Add = (props) => {
                             getValueFromEvent={(e) =>
                               e.target && e.target.getContent()
                             }
-                            rules={[requiredRule]}
+
                           >
                             <Editor
                               apiKey="2nubq7tdhudthiy6wfb88xgs36os4z3f4tbtscdayg10vo1o"
