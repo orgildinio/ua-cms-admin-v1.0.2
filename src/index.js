@@ -9,6 +9,7 @@ import App from "./Pages/App/";
 import reportWebVitals from "./reportWebVitals";
 
 // Reducers
+import adsReducer from "./redux/reducer/adsReducer";
 import bannerReducer from "./redux/reducer/bannerReducer";
 import bookReducer from "./redux/reducer/bookReducer";
 import contactReducer from "./redux/reducer/contactReducer";
@@ -47,6 +48,7 @@ const loggerMiddlaware = (store) => {
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const reducers = combineReducers({
+  adsReducer,
   bannerReducer,
   contactReducer,
   footerMenuReducer,

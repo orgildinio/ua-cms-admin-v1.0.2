@@ -67,6 +67,9 @@ import Contact from "../Contact";
 // WEBSETTINGS
 import WebSettings from "../WebSettings";
 import Socials from "../WebSettings/socials";
+import Adsies from "../WebSettings/ads";
+import AdsiesAdd from "../WebSettings/ads/Add";
+import AdsiesEdit from "../WebSettings/ads/Edit";
 import Banner from "../WebSettings/banner";
 import BannerAdd from "../WebSettings/banner/Add";
 import BannerEdit from "../WebSettings/banner/Edit";
@@ -167,6 +170,13 @@ function App(props) {
               <Route path="/menus" exact component={Menus} />
               <Route path="/menus/footer" exact component={FooterMenu} />
               <Route path="/web_settings/socials" exact component={Socials} />
+              <Route path="/web_settings/ads" exact component={Adsies} />
+              <Route path="/web_settings/ads/add" exact component={AdsiesAdd} />
+              <Route
+                path="/web_settings/ads/edit/:id"
+                exact
+                component={AdsiesEdit}
+              />
               <Route path="/web_settings" exact component={WebSettings} />
               <Route path="/logout" component={Logout} />
               <Redirect to="/" />
