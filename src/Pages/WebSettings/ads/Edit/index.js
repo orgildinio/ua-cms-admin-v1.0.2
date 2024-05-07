@@ -183,7 +183,7 @@ const Edit = (props) => {
           url: `${base.cdnUrl}150x150/${props.ads.banner}`,
         });
 
-      setSelectedStatus(props.banner.status);
+      setSelectedStatus(props.ads.status);
     }
   }, [props.ads]);
 
