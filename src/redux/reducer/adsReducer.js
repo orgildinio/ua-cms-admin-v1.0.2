@@ -33,7 +33,7 @@ const reducer = (state = initialState, action) => {
         adsies: [],
       };
 
-    case "":
+    case "LOAD_ADS_SUCCESS":
       return {
         ...state,
         loading: false,
