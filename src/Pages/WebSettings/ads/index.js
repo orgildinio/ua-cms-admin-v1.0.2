@@ -276,13 +276,6 @@ const Ads = (props) => {
           el.createUser = el.createUser && el.createUser.name;
           el.updateUser = el.updateUser && el.updateUser.name;
 
-          el.name = el[cookies.language] ? (
-            el[cookies.language].name
-          ) : (
-            <p className="red-color">
-              {el[cookies.language === "eng" ? "mn" : "eng"].name}
-            </p>
-          );
           el.createAt = moment(el.createAt)
             .utcOffset("+0800")
             .format("YYYY-MM-DD HH:mm:ss");
